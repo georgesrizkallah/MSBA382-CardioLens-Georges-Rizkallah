@@ -1,0 +1,86 @@
+{
+  "comparison": [
+    {
+      "model": "Logistic regression",
+      "auc": 0.703,
+      "ci_low": 0.659,
+      "ci_high": 0.745,
+      "avg_precision": 0.296
+    },
+    {
+      "model": "Random forest",
+      "auc": 0.686,
+      "ci_low": 0.643,
+      "ci_high": 0.729,
+      "avg_precision": 0.293
+    },
+    {
+      "model": "XGBoost",
+      "auc": 0.683,
+      "ci_low": 0.637,
+      "ci_high": 0.724,
+      "avg_precision": 0.302
+    },
+    {
+      "model": "Framingham score (2008)",
+      "auc": 0.71,
+      "ci_low": 0.666,
+      "ci_high": 0.752,
+      "avg_precision": 0.313
+    }
+  ],
+  "xgb_auc": 0.683,
+  "xgb_cv_auc": 0.695,
+  "brier": {
+    "Logistic (balanced)": 0.212,
+    "Random forest": 0.189,
+    "XGBoost (raw)": 0.123,
+    "Logistic (calibrated)": 0.121,
+    "XGBoost (isotonic)": 0.124
+  },
+  "operating_point_f1": {
+    "threshold": 0.189,
+    "precision": 0.276,
+    "recall": 0.491,
+    "f1": 0.353,
+    "specificity": 0.77
+  },
+  "operating_point_screen": {
+    "threshold": 0.15,
+    "precision": 0.239,
+    "recall": 0.565,
+    "f1": 0.336,
+    "specificity": 0.677
+  },
+  "subgroups": [
+    {
+      "group": "Men",
+      "n": 454,
+      "auc": 0.67,
+      "lo": 0.607,
+      "hi": 0.733
+    },
+    {
+      "group": "Women",
+      "n": 606,
+      "auc": 0.663,
+      "lo": 0.603,
+      "hi": 0.732
+    },
+    {
+      "group": "Age 30\u201349",
+      "n": 573,
+      "auc": 0.653,
+      "lo": 0.575,
+      "hi": 0.726
+    },
+    {
+      "group": "Age 50+",
+      "n": 487,
+      "auc": 0.621,
+      "lo": 0.562,
+      "hi": 0.683
+    }
+  ],
+  "frs_validation": 16.75
+}

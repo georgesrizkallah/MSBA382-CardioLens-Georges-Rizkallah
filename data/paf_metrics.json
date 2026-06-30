@@ -1,0 +1,47 @@
+{
+  "paf": [
+    {
+      "factor": "Diabetes",
+      "exposure_pct": 2.6,
+      "rr": 2.51,
+      "paf_cohort_pct": 3.7,
+      "paf_lebanon_pct": 12.8
+    },
+    {
+      "factor": "Obesity (BMI\u226530)",
+      "exposure_pct": 12.7,
+      "rr": 1.34,
+      "paf_cohort_pct": 4.1,
+      "paf_lebanon_pct": 8.9
+    },
+    {
+      "factor": "Smoking",
+      "exposure_pct": 49.4,
+      "rr": 1.1,
+      "paf_cohort_pct": 4.5,
+      "paf_lebanon_pct": 3.9
+    },
+    {
+      "factor": "High cholesterol (\u2265240)",
+      "exposure_pct": 44.4,
+      "rr": 1.35,
+      "paf_cohort_pct": 13.5,
+      "paf_lebanon_pct": NaN
+    },
+    {
+      "factor": "Hypertension",
+      "exposure_pct": 31.1,
+      "rr": 2.26,
+      "paf_cohort_pct": 28.1,
+      "paf_lebanon_pct": 27.4
+    }
+  ],
+  "baseline_chd_pct": 15.2,
+  "pulse_pressure_chd_by_tertile": {
+    "Low": 9.4,
+    "Mid": 12.2,
+    "High": 23.3
+  },
+  "pulse_pressure_corr": 0.204,
+  "note": "PAFs use crude cohort relative risks (Levin's formula); they do not sum to 100% because risk factors co-occur. The Lebanon projection applies cohort RRs to published Lebanese exposure prevalence."
+}

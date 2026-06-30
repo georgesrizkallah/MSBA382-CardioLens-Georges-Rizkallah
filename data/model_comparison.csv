@@ -1,0 +1,5 @@
+model,auc,ci_low,ci_high,avg_precision
+Logistic regression,0.703,0.659,0.745,0.296
+Random forest,0.686,0.643,0.729,0.293
+XGBoost,0.683,0.637,0.724,0.302
+Framingham score (2008),0.71,0.666,0.752,0.313
